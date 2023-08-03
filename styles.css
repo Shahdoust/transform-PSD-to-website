@@ -6,7 +6,7 @@ body {
 }
 
 .team-main {
-  background-image: url("imgs/photoshop/design-assets/bgk-header.png");
+  background: url("imgs/photoshop/design-assets/bgk-header.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -21,48 +21,76 @@ body {
 .team-container {
   display: grid;
   grid-template-columns: 15% 15% 15% 15%;
-
-  justify-content: center;
+  grid-template-rows: 60%;
+  flex-flow: row;
+  justify-content: space-around;
   padding-top: 5em;
 }
 
 .square-white1 {
-  border: 2px solid white;
-  padding: 5em;
-  display: flex;
-  text-align: center;
+  background-color: white;
 }
 
 .square-white2 {
-  border: 2px solid white;
-  padding: 5em;
-  display: flex;
-  text-align: center;
+  background-color: white;
+  order: -1;
 }
 
 .square-white3 {
-  border: 2px solid white;
-  padding: 5em;
-  display: flex;
-  text-align: center;
+  background-color: white;
+  order: -1;
 }
-
 .square-white4 {
-  border: 2px solid white;
-  padding: 5em;
-  display: flex;
-  text-align: center;
+  background-color: white;
+  order: -1;
 }
 
 .square1-text {
-  border: 2px solid red;
+  border: 2px solid white;
+  border-top: none;
+  margin-bottom: 3em;
+  text-align: center;
+}
+.square2-text {
+  border: 2px solid white;
+  border-top: none;
+  margin-bottom: 3em;
+  text-align: center;
+}
+.square3-text {
+  border: 2px solid white;
+  border-top: none;
+  margin-bottom: 3em;
+  text-align: center;
+}
+
+.square4-text {
+  border: 2px solid white;
+  border-top: none;
+  margin-bottom: 3em;
+  text-align: center;
 }
 
 .team-bottom {
-  margin-top: 2em;
+  margin-top: 5em;
   text-align: center;
 }
 
 .team-button {
   margin-bottom: 1em;
+}
+
+.contact-main {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.logos img {
+  width: 5em;
+  padding: 1em;
+}
+
+.logos h3 .logo-images {
+  display: grid;
+  grid-template-columns: 20% 20%;
+  justify-content: space-around;
 }
