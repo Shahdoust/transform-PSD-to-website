@@ -94,3 +94,93 @@ body {
   font-size: 70%;
   font-weight: bold;
 }
+
+.team-main {
+  background: url("imgs/photoshop/design-assets/bgk-header.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+.team-heading {
+  text-align: center;
+  padding-top: 2em;
+}
+
+.team-container {
+  display: grid;
+  grid-template-columns: 15% 15% 15% 15%;
+  grid-template-rows: 60%;
+  flex-flow: row;
+  justify-content: space-around;
+  padding-top: 5em;
+}
+
+.square-white1 {
+  background-color: white;
+}
+
+.square-white2 {
+  background-color: white;
+  order: -1;
+}
+
+.square-white3 {
+  background-color: white;
+  order: -1;
+}
+.square-white4 {
+  background-color: white;
+  order: -1;
+}
+
+.square1-text {
+  border: 2px solid white;
+  border-top: none;
+  margin-bottom: 3em;
+  text-align: center;
+}
+.square2-text {
+  border: 2px solid white;
+  border-top: none;
+  margin-bottom: 3em;
+  text-align: center;
+}
+.square3-text {
+  border: 2px solid white;
+  border-top: none;
+  margin-bottom: 3em;
+  text-align: center;
+}
+
+.square4-text {
+  border: 2px solid white;
+  border-top: none;
+  margin-bottom: 3em;
+  text-align: center;
+}
+
+.team-bottom {
+  margin-top: 5em;
+  text-align: center;
+}
+
+.team-button {
+  margin-bottom: 1em;
+}
+
+.contact-main {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.logos img {
+  width: 5em;
+  padding: 1em;
+}
+
+.logos h3 .logo-images {
+  display: grid;
+  grid-template-columns: 20% 20%;
+  justify-content: space-around;
+}
