@@ -1,0 +1,61 @@
+.team-main {
+  background-image: url("imgs/photoshop/design-assets/bgk-header.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+.team-heading {
+  text-align: center;
+  padding-top: 2em;
+}
+
+.team-container {
+  display: grid;
+  grid-template-columns: 15% 15% 15% 15%;
+
+  justify-content: center;
+  padding-top: 5em;
+}
+
+.square-white1 {
+  border: 2px solid white;
+  padding: 5em;
+  display: flex;
+  text-align: center;
+}
+
+.square-white2 {
+  border: 2px solid white;
+  padding: 5em;
+  display: flex;
+  text-align: center;
+}
+
+.square-white3 {
+  border: 2px solid white;
+  padding: 5em;
+  display: flex;
+  text-align: center;
+}
+
+.square-white4 {
+  border: 2px solid white;
+  padding: 5em;
+  display: flex;
+  text-align: center;
+}
+
+.square1-text {
+  border: 2px solid red;
+}
+
+.team-bottom {
+  margin-top: 2em;
+  text-align: center;
+}
+
+.team-button {
+  margin-bottom: 1em;
+}
