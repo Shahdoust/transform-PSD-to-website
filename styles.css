@@ -16,58 +16,29 @@ body {
 .team-heading {
   text-align: center;
   padding-top: 2em;
+  padding-bottom: 3em;
 }
 
 .team-container {
   display: grid;
   grid-template-columns: 15% 15% 15% 15%;
-  grid-template-rows: 60%;
-  flex-flow: row;
+  grid-template-rows: repeat(2 1fr);
   justify-content: space-around;
-  padding-top: 5em;
 }
 
-.square-white1 {
-  background-color: white;
+.square-white {
+  background: white;
+  display: grid;
+  height: 58%;
+
+  width: 10em;
 }
 
-.square-white2 {
-  background-color: white;
-  order: -1;
-}
-
-.square-white3 {
-  background-color: white;
-  order: -1;
-}
-.square-white4 {
-  background-color: white;
-  order: -1;
-}
-
-.square1-text {
-  border: 2px solid white;
+.square-text {
+  display: grid;
+  border: 1px solid white;
   border-top: none;
-  margin-bottom: 3em;
-  text-align: center;
-}
-.square2-text {
-  border: 2px solid white;
-  border-top: none;
-  margin-bottom: 3em;
-  text-align: center;
-}
-.square3-text {
-  border: 2px solid white;
-  border-top: none;
-  margin-bottom: 3em;
-  text-align: center;
-}
-
-.square4-text {
-  border: 2px solid white;
-  border-top: none;
-  margin-bottom: 3em;
+  margin-top: 10em;
   text-align: center;
 }
 
@@ -77,20 +48,72 @@ body {
 }
 
 .team-button {
-  margin-bottom: 1em;
+  width: 15%;
+  background: transparent;
+  padding: 5px;
+  margin-bottom: 2em;
+  color: #01ddfa;
+  border: 2px solid #01ddfa;
+  border-radius: 1px;
 }
 
 .contact-main {
-  display: grid;
-  grid-template-columns: 50% 50%;
-}
-.logos img {
-  width: 5em;
-  padding: 1em;
+  display: flex;
+  justify-content: center;
+  margin-left: 5em;
 }
 
-.logos h3 .logo-images {
+.contact-container {
+  width: 40%;
+
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-align: left;
+}
+
+.contact-form {
   display: grid;
-  grid-template-columns: 20% 20%;
-  justify-content: space-around;
+  opacity: 55%;
+  width: 20em;
+  box-sizing: border-box;
+  margin: 2em;
+  justify-content: flex-start;
+  margin-left: 0;
+}
+
+.contact-form input {
+  width: 23em;
+  margin: 1em;
+  margin-left: 0;
+  margin-top: 1em;
+}
+
+.contact-button {
+  width: 35%;
+  margin-top: 1em;
+  margin-left: 0;
+  background-color: white;
+  color: #01ddfa;
+  border: 2px solid #01ddfa;
+  border-radius: 1px;
+  padding: 5px;
+}
+
+.logo-images {
+  display: grid;
+  width: 25em;
+
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.logo-images img {
+  margin-top: 1em;
+  width: 100px;
+  padding: 0.5em;
+}
+.logos {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-align: center;
 }
