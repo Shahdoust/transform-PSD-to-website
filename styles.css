@@ -1,66 +1,62 @@
-
 body {
   padding: 0;
   max-width: 80%;
   margin: auto;
 }
-   /* HEADER  */
-   .header {
-    background-image: url("bgk-header.png");
-    min-height: 600px; 
-    min-width: 400px;
-    background-size: 100%;
-    background-repeat:no-repeat ;
-    }
-    nav {
-      display: flex;
-      justify-content:space-between ;
-      align-items: center;
-      margin: 0 10px;
-
-    }
-    .logo {
-      display: flex;
-      align-items: flex-start;
-      padding-top: 10px;
-      margin-left: 15%;
-      
-    }
-    ul {
-      display: flex;
-      list-style: none;
-     }
-     ul li a{
-      color: whitesmoke;
-      margin: 0 10px;
-      text-decoration: none;
-    
-     }
-     .logo p {
-      color:aquamarine;
-      margin: 0 10px;
-      padding-top: 10px;
-      font-size: 30px;
-      text-decoration:none ;
-       }
-       .header-content {
-        margin-left: 20%;
-        margin-top: 10%;
-       }
-       .header-content h1 {
-        color: whitesmoke;
-       }
-       .header-content p {
-        color: whitesmoke;
-        font-family: ;
-       }
-       .ctn {
-        color: aquamarine;
-        background-color:rgb(12, 0, 41);
-        border-color: aquamarine;
-       margin-left: 20%;
-       }
-       /**------------header-----------**/
+/* HEADER  */
+.header {
+  background-image: url("./imgs/photoshop/design-assets/bgk-header.png");
+  min-height: 600px;
+  min-width: 400px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10px;
+}
+.logo {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 10px;
+  margin-left: 15%;
+}
+ul {
+  display: flex;
+  list-style: none;
+}
+ul li a {
+  color: whitesmoke;
+  margin: 0 10px;
+  text-decoration: none;
+}
+.logo p {
+  color: aquamarine;
+  margin: 0 10px;
+  padding-top: 10px;
+  font-size: 30px;
+  text-decoration: none;
+}
+.header-content {
+  margin-left: 20%;
+  margin-top: 10%;
+}
+.header-content h1 {
+  color: whitesmoke;
+}
+.header-content p {
+  color: whitesmoke;
+  font-family: ;
+}
+.ctn {
+  color: aquamarine;
+  background-color: rgb(12, 0, 41);
+  border-color: aquamarine;
+  margin-left: 20%;
+}
+/**------------header-----------**/
 
 .story-main-container {
   display: flex;
