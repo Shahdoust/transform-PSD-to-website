@@ -21,25 +21,36 @@ body {
 
 .team-container {
   display: grid;
-  grid-template-columns: 15% 15% 15% 15%;
-  grid-template-rows: repeat(2 1fr);
-  justify-content: space-around;
+  grid-template-columns: 25% 25% 25% 25%;
+  column-gap: 2%;
+  padding-left: 15%;
+  padding-right: 15%;
+  /*   grid-template-rows: repeat(2 1fr); */
+  justify-content: center;
 }
 
 .square-white {
-  background: white;
-  display: grid;
-  height: 58%;
+  border: 1px solid white;
+  /*   height: fit-content; */
+  display: flex;
+  flex-direction: column;
 
-  width: 10em;
+  /*   height: 58%;
+
+  width: 10em; */
+}
+
+.upper-part {
+  height: 60px;
+  background-color: white;
 }
 
 .square-text {
-  display: grid;
-  border: 1px solid white;
-  border-top: none;
-  margin-top: 10em;
   text-align: center;
+}
+.square-text h4,
+p {
+  font-size: 0.5em;
 }
 
 .team-bottom {
@@ -48,6 +59,7 @@ body {
 }
 
 .team-button {
+  font-size: 0.5em;
   width: 15%;
   background: transparent;
   padding: 5px;
@@ -58,31 +70,34 @@ body {
 }
 
 .contact-main {
-  display: flex;
-  justify-content: center;
-  margin-left: 5em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 700px) {
+  .contact-main {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .contact-container {
-  width: 40%;
-
   margin-top: 1em;
   margin-bottom: 1em;
   text-align: left;
 }
 
 .contact-form {
-  display: grid;
   opacity: 55%;
-  width: 20em;
+  /*  width: 20em; */
   box-sizing: border-box;
   margin: 2em;
-  justify-content: flex-start;
+
   margin-left: 0;
 }
 
 .contact-form input {
-  width: 23em;
+  /*  width: 23em; */
   margin: 1em;
   margin-left: 0;
   margin-top: 1em;
@@ -98,22 +113,20 @@ body {
   border-radius: 1px;
   padding: 5px;
 }
-
-.logo-images {
-  display: grid;
-  width: 25em;
-
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-}
-
-.logo-images img {
-  margin-top: 1em;
-  width: 100px;
-  padding: 0.5em;
-}
 .logos {
   margin-top: 1em;
   margin-bottom: 1em;
   text-align: center;
+}
+
+.logo-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+.logo-images img {
+  margin-top: 1em;
+  width: 50px;
+  padding: 0.5em;
 }
