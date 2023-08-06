@@ -4,24 +4,79 @@ body {
   margin: auto;
   font-family: "Inter", sans-serif;
 }
+/* HEADER  */
+.header {
+  background-image: url("./imgs/photoshop/design-assets/bgk-header.png");
+  min-height: 600px;
+  min-width: 400px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10px;
+}
+.logo {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 10px;
+  margin-left: 15%;
+}
+.nav-list {
+  display: flex;
+  list-style: none;
+}
+
+.nav-items a {
+  color: whitesmoke;
+  margin: 0 10px;
+  text-decoration: none;
+}
+.logo p {
+  color: aquamarine;
+  margin: 0 10px;
+  padding-top: 10px;
+  font-size: 30px;
+  text-decoration: none;
+}
+.header-content {
+  margin-left: 20%;
+  margin-top: 10%;
+}
+.header-content h1 {
+  color: whitesmoke;
+}
+.header-content p {
+  color: whitesmoke;
+}
+.ctn {
+  color: aquamarine;
+  background-color: rgb(12, 0, 41);
+  border-color: aquamarine;
+  margin-left: 20%;
+}
+/**------------header-----------**/
 
 .story-main-container {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
-  margin-left: 30%;
   margin-bottom: 5em;
+  line-height: 1.5rem;
+  margin-top: 2px;
 }
 
 .story-main-container .logo-img {
-  margin-top: 3%;
-  margin-right: 3%;
+  margin-right: 10%;
 }
 
 .logo-img img {
-  max-width: 7.1em;
-  margin-right: 1em;
+  margin-top: 30px;
+  max-width: 100%;
+  height: auto;
 }
 
 .ourstory-paragraph-button {
@@ -29,14 +84,20 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: start;
+  max-width: 40%;
 }
 
+.ourstory-paragraph-button h1 {
+  font-family: "Times New Roman", Times, serif;
+  color: darkslategrey;
+}
 .ourstory-paragraph-button p {
-  max-width: 50%;
+  font-size: 0.85em;
+  line-height: 1.3rem;
+  color: gray;
 }
 
 .ourstory-paragraph-button button {
-  margin-top: 20%;
   color: aqua;
   border-color: aqua;
 }
@@ -44,11 +105,17 @@ body {
 .video-container {
   display: flex;
   background: url("./imgs/photoshop/design-assets/bgk-middle.png") no-repeat;
-  min-height: 500px;
-  background-size: 100%;
+  background-position: center;
+  background-size: cover;
+  min-height: 400px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.icon-play-video img {
+  max-width: 100%;
+  height: auto;
 }
 
 .video-container h2 {
@@ -70,6 +137,7 @@ body {
   align-items: center;
   text-align: center;
 }
+
 .expertise-title h2 {
   margin-bottom: 2px;
 }
@@ -78,19 +146,23 @@ body {
   margin-top: 0;
 }
 
+.expertise-main-container .line {
+  width: 50px;
+  height: 2px;
+  background-color: rgb(177, 175, 175);
+}
+
 .expertise-grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
   height: 50vh;
-  width: 60%;
+  min-width: 60%;
 }
 
-.expertise-grid-container:nth-child(1n) {
-  border-right: var(--border);
-}
 .expertise-grid-with-text {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
