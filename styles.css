@@ -227,8 +227,10 @@ nav {
 .square-text {
   text-align: center;
 }
-.square-text h4,
-p {
+.square-text h4 {
+  font-size: 0.5em;
+}
+.square-paragraph {
   font-size: 0.5em;
 }
 
